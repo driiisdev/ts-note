@@ -6,7 +6,7 @@
 //  compiles to plain javascript
 //  Ts = es5 + es6 + es7 + features 
 //  safer code
-
+ 
 //eg:
 
 let userName: string = "idris";

@@ -19,3 +19,11 @@ export const fetchData = (url: string): Promise<string> =>{
         Promise.resolve(`Data from ${url}`)
     );
 }
+
+function introduce(salutaion:string, ...name:string[]): string {
+    return(`${salutaion} ${name.join(" ")}`);
+}
+
+export function getName(user:{first: string; last: string;}): string {
+    return `${user?.first} ${user?.last}`
+}
