@@ -14,16 +14,17 @@ export const printFormat = (title: string, param: string | number): void => {
 }
 
 // promise function
-export const fetchData = (url: string): Promise<string> =>{
-    return(
-        Promise.resolve(`Data from ${url}`)
-    );
-}
+// export const fetchData = (url: string): Promise<string> =>{
+//     return(
+//         Promise.resolve(`Data from ${url}`)
+//     );
+// }
 
 function introduce(salutaion:string, ...name:string[]): string {
     return(`${salutaion} ${name.join(" ")}`);
 }
 
-export function getName(user:{first: string; last: string;}): string {
-    return `${user?.first} ${user?.last}`
+export function getName(user:{first: string, last: string}): string {
+    // optional chain operators
+    return `${user?.first??"first"} ${user?.last??"last"}`
 }
