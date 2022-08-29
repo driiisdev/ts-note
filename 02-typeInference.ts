@@ -1,4 +1,4 @@
-// type inference helps by identifying the data type
+// type inference helps by identifying the data type by default
 var n1 = 10;
 
 var n2 = n1 + "hello";
